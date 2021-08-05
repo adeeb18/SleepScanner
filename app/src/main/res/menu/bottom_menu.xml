@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Start Sleep" android:icon="@drawable/ic_bed" android:id="@+id/start_sleep"/>
+    <item android:title="Sleep History" android:icon="@drawable/ic_history" android:id="@+id/sleep_history"/>
+    <item android:title="Settings" android:icon="@drawable/ic_settings" android:id="@+id/settings"/>
+</menu>

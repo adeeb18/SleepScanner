@@ -7,16 +7,25 @@
     android:background="#E1DCF2"
     tools:context=".DashboardActivity">
 
-    <Button
-        android:id="@+id/beginNight"
-        android:layout_width="wrap_content"
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="launchSensors"
-        android:text="Begin Nights Sleep!"
-        android:textColor="#000000"
-        app:backgroundTint="#FBFDFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:menu="@menu/bottom_menu"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="409dp"
+        android:layout_height="340dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/navigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/dash_nav" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

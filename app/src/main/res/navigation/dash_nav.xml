@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dash_nav"
+    app:startDestination="@id/start_sleep">
+
+    <fragment
+        android:id="@+id/start_sleep"
+        android:name="com.example.sleepsurvey.start_sleep"
+        android:label="fragment_start_sleep"
+        tools:layout="@layout/fragment_start_sleep" />
+    <fragment
+        android:id="@+id/sleep_history"
+        android:name="com.example.sleepsurvey.sleep_history"
+        android:label="fragment_sleep_history2"
+        tools:layout="@layout/fragment_sleep_history" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.sleepsurvey.settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
